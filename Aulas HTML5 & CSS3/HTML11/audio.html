@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com audios</title>
+</head>
+<body>
+    <h1>Reproduzindo audios</h1>
+    <p>Vamos Aprender como Reproduzir audios em HTML</p>
+    <h4>Emotional-Mess-AmyLynn</h4>
+    <audio src="audios/Emotional-Mess-AmyLynn&theHoneyMen.mp3" controls autoplay></audio> <!--1 maneira-->
+    <br>
+    <h4>Celso De La Penha</h4>
+    <audio preload="metadata" autoplay controls><!-- Se colocar loop no final desta tag e musica reinicia sempre que terminar. -->
+        <!--preload="metadada, none e auto"-->
+        <source src="audios/ft-celso-de-la-pena-x-malazarts-prod-finexbeatz.mp3" type="audio/mpeg">
+        <source src="audios/ft-celso-de-la-pena-x-malazarts-prod-finexbeatz.mp3" type="audio/ogg"><!--Nao vai tocar por que eu nao converti-->
+        <source src="audios/ft-celso-de-la-pena-x-malazarts-prod-finexbeatz.mp3" type="audio/wav"><!--Nao vai tocar por que eu nao converti. Arquivos wav sao muito pesados e fazem seu site ficar lento-->
+        <p>Se nenhum formato pode ser Reproduzindo pode ser feito o download em mp3 neste <a href="audios/ft-celso-de-la-pena-x-malazarts-prod-finexbeatz.mp3">link</a></p>
+    </audio>
+        <p>Veja a Aula sobre <a href="videos.html">Videos</a> ou use <a href="index.html">Imagens</a></p>
+</body>
+</html>

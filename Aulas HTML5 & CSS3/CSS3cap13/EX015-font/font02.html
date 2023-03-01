@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Fontes externas</title>
+    <style>/* nada te impede de usar tanto fontes da google como externas */
+        @font-face {
+            font-family: 'Love';
+            /* Necessario criar um nome para a font */
+            src: url('font/registac/Regista.ttf') format('truetype');/* ctrl+space link do arquivo e discrimina o format */
+            font-weight: normal;
+            /* determina a weight padrão */
+            font-style: normal;
+            /* Determina o style padrao */
+        }
+        @font-face {
+            font-family: 'Cabin';
+            src: url('Font/Cabin/Cabin-Italic.ttf') format('truetype'), url('Font/Cabin/Cabin.ttf') format('truetype');
+            /* é muito importante usar as pontuações, virgulas, espaços, etc, corretamente para o bom funcionamento. */
+            font-weight: normal;
+            font-style: normal;
+        }
+        /*Tipos de format
+        - Opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (Apple Advance Typography)
+        - svg
+        */
+        body {
+            font-family: 'Cabin', sans-serif;
+                        /* Escrever o nome criado la em cima*/
+        }
+        h1 {
+            font-family: 'Love', serif;
+            font-size: 3em;
+            font-weight: normal;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body> <!-- Estudado em 07/02/23-->
+    <h1>Fontes Externas ou Baixadas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sunt laboriosam nihil porro dolorum ut expedita asperiores distinctio doloremque repudiandae quam hic animi dolor voluptatibus odio minus, aspernatur nesciunt exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus qui itaque aspernatur accusamus, consequuntur facilis non sint minus laudantium dolorum! Repellendus, omnis. Quae itaque accusamus doloribus veritatis, maiores vel nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi pariatur impedit non cumque iure optio accusamus fugiat asperiores quidem reprehenderit, ab incidunt officia vel, commodi illo perspiciatis explicabo voluptatum natus!</p>
+</body>
+</html>

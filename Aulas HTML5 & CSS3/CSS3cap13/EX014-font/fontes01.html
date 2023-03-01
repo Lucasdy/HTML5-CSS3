@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <Style>
+        body{
+            font-family: 'Courier New', Courier, serif, sans-serif;/* Determina a familia da cor. com ou sem serifa, monoespaçado ou não. Escolhe a fonte entre as opções por eliminatoria.*/
+
+            /*font-size: 3em;
+                         Medidas Absolutas
+            cm, mm, in(polegada), px, pt(ponto), pc(paica)
+
+
+            Medidas Relativas 
+            eM ('M' maior. relativa ao tamanho atual da fonte), ex (relativo ao altura x de uma fonte), rem(relativo a fonte que ta configurada no root,  vw(vieo ware port - largura total da tela), %*/
+            /* Recomendação da W3 o uso apenas de px e em. */
+            /*1em é = 16px*/
+            font-weight: lighter;
+            /* Variação numérica varia de 100 a 900
+            100, 200, 300, 400, 500, 600, 700 800, 900*/
+            /* Variação de pesos
+            lighter, normal, bold, bolder */
+            font-style: normal;
+            /* Variação de estilo
+            italic, oblique, normal */
+            text-decoration: underline;
+            /*Decoração do texto */
+            /* Papel Higienico Link
+            https://www.ecycle.com.br/papel-higienico/ */
+        }
+        p {
+            /*
+            shorthand font -  inves de usar todas estas config. posso usar apenas a versão curta.
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bolder;
+            font-size: 2em;
+            font-style: italic;
+            
+            (a ordem é essa ordem nao mude)
+            - font-style -> font-weight -> font-size -> font-family */
+            font: italic bolder 1em verdana sans-serif;
+
+        }
+    </Style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1><!-- Estudado no dia 06/02/23-->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ad magni vitae nam, ipsa necessitatibus repellendus illum tempora, nisi, nostrum pariatur rerum omnis libero a dolorem error! Facilis, atque minus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora totam obcaecati ratione maxime enim ducimus incidunt inventore sit officiis perspiciatis nemo alias, consequuntur labore, fugiat cum architecto suscipit, libero ea?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et magni ab nesciunt ipsum laboriosam quae sit. Eligendi amet harum dolor sunt inventore dolores quaerat commodi corrupti fugit sint. Et, necessitatibus?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium tenetur eius animi placeat, quisquam delectus aperiam neque eaque eos vel. Nobis ad maxime necessitatibus molestiae iste rerum, non quis cumque!</p>
+    <h2>Subtitulos de exercicio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nisi doloremque, quae, eos quo saepe exercitationem quasi explicabo aspernatur deleniti dolore asperiores nulla voluptates non ea ab! Tenetur, nemo esse?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime in consequuntur a repellat eligendi aspernatur quisquam ad, pariatur asperiores porro voluptatem, nihil deleniti repudiandae quo aperiam suscipit optio. Voluptate, dicta?</p>
+    <h2>Procure mais informações e referências sobre fontes <a href="https://www.w3schools.com/css/css_font_pairings.asp" target="_blank"><b>AQUI</b></a>.</h2>
+</body>
+</html>

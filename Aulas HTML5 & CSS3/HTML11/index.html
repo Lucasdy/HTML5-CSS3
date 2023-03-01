@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias HTML5</title>
+</head>
+<body>
+    <h1>Imagen Dinâmica</h1>
+    <p>Tente abrir este sites em diferentes dispositivos ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture><!--Cria um container para as imagens. Dica de edição de imagem, gimp-->
+        <source media="(min-width: 750px)" srcset="Imagens/Imagem300.png" type="image/png"><!--width deve ser sempre definido no tamanho da imagem maior para a menor em px. A ordem deve comecar ou da g para p ou p para g-->
+        <source media="(max-width: 1050px)" srcset="Imagens/Imagem700.png" type="image/png">
+        <img src="Imagens/Imagem1000.png" alt="imagem flexivel"><!-- a imagem base sempre deve ficar em baixo. Introdução normal de imagens-->
+    </picture>
+    <h2>Aprenda tambem sobre <a href="audio.html" ref="next">Audios</a> ou <a href="videos.html">videos</a></h2>
+    
+</body>
+</html>

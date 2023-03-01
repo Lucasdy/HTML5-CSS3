@@ -1,0 +1,52 @@
+@charset "UTF-8";
+body {
+    color: palevioletred;
+}
+h1 {
+    color: purple;
+    
+}
+h1.basic {
+    color: rgb(32, 0, 128);
+    /*
+    Tudo que for 'class' em HTML = em CSS é '.'.
+    */    
+}
+h1#principal {
+    color: rgb(11, 82, 3);
+    text-align: center;
+    /* 
+    Tudo que em HTML for 'id' = em CSS é #.
+
+    A identificação pode ser escrita da forma acima, mas, limitará a configuração a itens de mesma 'tag e id'. Se não possuir id as configurações serão empregadas a todos os itens de mesma 'tag'. Porem se for escrito da forma a baixo, permite que se determine a configuração a partir do 'id' do item sem considerar a tag. Como o exemplo do paragrado de 'HTML báisco.
+    */
+}
+.learn {
+    color: rgb(14, 29, 57);
+}
+.basic {
+    color: rgb(85, 66, 12);
+    font-weight: bolder;
+}
+.intermediary {
+    color: rgb(59, 8, 8);
+}
+.advanced {
+    color: rgb(37, 83, 45);
+}
+.destaque {
+    background-color: rgba(0, 255, 255, 0.359);
+    font: normal bold 32px 'Verdana';
+}
+/*p {
+    font: italic normal 16px 'Cabin';
+}
+p {
+    font: normal normal 16px 'Cabin';
+}
+p {
+    font: italic normal 16px 'Love';
+}
+p {
+    font: normal normal 16px 'Love';
+}*/

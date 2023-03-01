@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modelos de caixas</title>
+    <style>
+        h1 {/* Simplificação=Shorthand */
+            background-color: rgb(173, 184, 255);
+            /* __Cor da borda__
+            border-style:  solid;
+            __Cria um estilo de borda__
+            border-width: 10px;
+            __Largura da borda__
+            border-color: blue;
+            __Cor da borda__ */
+            border: 10px solid blue;
+            /* Simplificação de borda */
+            
+            height: 300px;
+            /* Altura da caixa */
+            width: 300px;
+            /* Largura da caixa */
+            /*  padding-top: 10px;
+            __padding cria uma margem variavel entre o texto e a borda__
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; */
+            padding: 10px 10px 10px 10px;
+            /* Se as quatro forem iguais ainda pode ser simplificado usando apenas uma unica cotação para as 4. Ex: padding: 10px; o html assume que as medidas sao iguais. Pode-se usar duas medidas. Ex: padding: 10px 10px; assim o html vai entener que os opostos te a mesma configuração top=buttom right=laft*/
+            /* Simplificação do padding sentiro horario a partir do top */
+
+            /* margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 40px;
+            margin-left: 10px;
+            margin: 10px 10px 10px 10px; */
+            margin: 20px 20px 40px 20px;
+            /* Simplificação de margin. pode ser simplificada ainda mais. Ex: margin: 20px auto 40px auto;. dessa forma a caixa fica centralizada ao meio da janela. */
+            /* outline-width: 5px;
+            __cria uma linha de espessura variavel de entorno a borda entre a borda e a margem, nao almenta nem diminui a margen__
+            outline-style: dashed;
+            __especifica o tipo de outline__
+            outline-color: blueviolet; */
+            outline: 5px dashed blueviolet;
+        }
+        a {
+            border: 5px solid red;
+            padding: 5px;
+            margin: 5px;
+        }
+        /* Display muda a caracteristica normais das caixas. Transforma box-level > inline-level e inline-level > box-level */
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa Box-level</h1>
+    <p>Parágrafos e títulos são exemplos de Box-level, mas os <a href="../EX017-Pseudo/pseudoclass03.html">Links são exemplos de Inline-level</a>
+    </p>
+
+</body>
+</html>

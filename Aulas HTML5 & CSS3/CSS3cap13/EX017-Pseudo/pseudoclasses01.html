@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        body {
+            
+        }
+        div {
+            display: inline-block;
+            /* alinha as div lado a lado*/
+            background-color: blue;
+            /*colore o fundo da div por detras dos caracteres*/
+            border: 1px solid black;
+            /*determina uma borda*/
+            text-align: center;
+            /* Alinha o texto*/
+            height: 200px;
+            /* Altura*/
+            width: 200px;
+            /* Largura*/
+            color: orange
+            /* Colore a letra*/   
+        }
+        /*pseudo classe se refere ao estado do item. se ele( EX:'esta ligado ou desligado', esta aberto ou fechado')*/
+        div:hover {
+            /*Pseudo class em css= ':'*/
+            /* hover ilumina a caixa quando passa o mouse*/
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body><!-- estudado no dia 08/02/23-->
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>    
+</body>
+</html>

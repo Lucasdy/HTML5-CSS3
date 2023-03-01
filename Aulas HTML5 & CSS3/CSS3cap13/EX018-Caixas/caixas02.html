@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: rgb(41, 41, 157);
+            margin: 0px;
+        }
+        header {
+            background-color: rgb(240, 240, 255);
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color:rgb(240, 240, 255);
+            text-align: center;
+        }
+        nav>a {
+            background-image: linear-gradient(to bottom, rgb(240, 240, 240), rgb(56, 56, 56));
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        nav>a:hover {
+            background-color: grey;
+            text-decoration: underline;
+        }
+        
+        main {
+            background-color: rgb(240, 240, 254);
+            padding: 10px;
+            margin: 10px;
+        }
+        article {
+            background-color: rgb(200, 200, 255);
+            padding: 5px;
+        }
+        article>aside{
+            background-color: blue;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer>p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="principal">Meu Site</h1>
+        <nav><!--navegação-->
+            <a href="../EX017-Pseudo/pseudoclasses02.html">Agenda</a>
+            <a href="../EX017-Pseudo/pseudoclasses02.html">Proditos</a>
+            <a href="../EX017-Pseudo/pseudoclasses02.html">Parceiros</a>
+            <a href="../EX017-Pseudo/pseudoclasses02.html">Cadastro</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            
+        </section>
+        <section>
+            <article id="notice">
+                <h2>Não é só saudável</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia vero quia autem reprehenderit eaque deleniti molestias veniam optio officiis minima sunt dolor distinctio, incidunt et ut! Officiis, quis laudantium!</p>
+                <aside>
+                    <p>Artigo escrito por Jose da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por lucas andretti</p>
+    </footer>
+
+</body>
+</html>

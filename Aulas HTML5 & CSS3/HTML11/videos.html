@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando videos em HTML%</title>
+</head>
+<body>
+    <h1>Iserindo videos Localmente</h1>
+        <p>Este videos esta hospedado no meu proprio servidor</p>
+            <video width="500" poster="Imagens/Antony.png" controls>
+                <!--Abra a aba de video. Determine o tamanho da janela do video com width. Determine a imagem de espera com poster. Inclua os controles de videos com o control. Tambem pode ser iserio o recurso loop para que os videos reiniciem a cada termino. E tambem Autoplay para que os videos comecem assim que carregados-->
+                <source src="videos/Antony.mp4" type="video/mp4">
+                <!--Anuncie varios formatos no src e especifique o formato  em type-->
+                <source src="videos/entenda-se-puder.ogv" type="video/ogv">
+                <source src="videos/ANtony2.mp4" type="video/mp4">
+                <source src="videos/entenda-se-puder.mp4" type="video/mp4">
+                <p>Desculpe! Seu navegador nao pode exucutar videos.</p>
+                <!-- esta mensagem so ira apareceer se nenhuma das versões for executada-->
+            </video><!--Os formatos validos para html5 sao M4V, MKV, OGV E WEBM-->
+    <h1>Incorporando videos do youtube</h1>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QK7ue908ArE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    <p>Volte ao <a href="index.html" ref="prev">Inicio</a> para entender como usar imagens flexiveis. Ou a aula anterior para <a href="audio.html" ref="prev">aprender a usar audios</a></p>
+</body>
+</html>

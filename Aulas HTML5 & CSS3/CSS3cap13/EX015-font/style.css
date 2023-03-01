@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Love';
+    src: url('font/registac/Regista.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cabin';
+    src: url('Font/Cabin/Cabin-Italic.ttf') format('truetype'), url('Font/Cabin/Cabin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body { 
+background-image: linear-gradient(to right, #010221, #0A7373)
+}
+
+main {
+    background-color: rgb(230, 230, 255);
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0);
+    width: 800px;
+    padding: 10px;
+    margin: right;  
+}
+h1 {
+    font-family: 'Love';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 32px;
+    color: #C43302;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(106, 0, 0);
+}
+h2 {
+    font-family: 'Love';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 32px;
+    color: #EDAA25;
+    text-shadow: 1px 1px 2px rgb(106, 0, 0);
+}
+
+p {
+    font-family: 'Cabin';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    color:#010221;
+    text-align: justify;
+}
+div {
+    background-color: aqua;
+    border-radius 3px;
+    box-shadow: 1px, 1px, 2px, black;
+    width: 500px;
+    padding: 10px;
+    margin:0%
+}

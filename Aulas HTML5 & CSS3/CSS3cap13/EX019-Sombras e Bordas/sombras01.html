@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        @font-face {
+            font-family: 'Love';
+            src: url(font/registac/Regista.ttf) format(truetype) url(font/registac/Regista\ Italic.ttf) format(truetype);
+        }
+        @font-face {
+            font-family: 'Cabin';
+            src: url(font/Cabin/Cabin.ttf) format(truetype) url(font/Cabin/Cabin-Italic.ttf) format(truetype);
+        }
+        
+        body {
+            font-family: 'Cabin';
+            background-color: brown;
+            /* No caso de se ter uma imagem de plano de fundo é aconselhavél que se determine uma cor de fundo para caso a imagem nao abra. isso vai ajudar o contraste a exibir textos mais claros para assim ficarem visiveis. */
+            background-image: url(Sem\ títuloat.png);
+            /* Define a imagem de fundo */
+            background-size: cover;
+            /* este atributo faz com que a imagem se distribua na tela toda */
+            margin: 0px;
+        }
+        header {
+            background-color: rgb(240, 240, 255);
+            box-shadow: 0px 1px 1px black;
+                    /* lateral, baixo, dispersão, cor; */ 
+            border-radius: 3px;
+            /* Define o raio do canto da borda */
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(240, 240, 240);
+            text-shadow: 0px 0px 4px rgb(250, 250, 250);
+                    /* lateral, baixo, dispersão, cor; */
+            text-align: center;            
+        }
+        nav>a {
+            background-image: linear-gradient(to bottom, rgb(240, 240, 240), rgb(24, 14, 131));
+            /* pode ser usado graus */
+            border-radius: 5px;
+            text-decoration: none;
+            Inibe o texto de decoração
+            padding: 2px;
+            box-shadow: 1px 1px 1px rgb(0, 0, 255);
+            /* Define a cor da sombra do elemento */
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+        nav>a:hover {
+            background-color: rgb(255, 200, 200);
+            text-decoration: underline;
+        }
+        
+        main {
+            background-color: rgb(240, 240, 254);
+            box-shadow: 1px 1px 1px black;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 10px;
+        }
+        article {
+            background-color: rgb(200, 200, 255);
+            padding: 5px;
+        }
+        article>aside{
+            background-color: rgb(0, 255, 115);
+            width: 250px;
+        }
+        footer {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-align: center;
+            padding: 2px;
+            margin: 0px;
+        }
+        footer>p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="principal">Meu Site</h1>
+        <nav><!--navegação-->
+            <a href="../EX017-Pseudo/pseudoclasses02.html">Agenda</a>
+            <a href="../EX017-Pseudo/pseudoclasses02.html">Proditos</a>
+            <a href="../EX017-Pseudo/pseudoclasses02.html">Parceiros</a>
+            <a href="../EX017-Pseudo/pseudoclasses02.html">Cadastro</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            
+        </section>
+        <section>
+            <article id="notice">
+                <h2>Não é só saudável</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia vero quia autem reprehenderit eaque deleniti molestias veniam optio officiis minima sunt dolor distinctio, incidunt et ut! Officiis, quis laudantium!</p>
+                <aside>
+                    <p>Artigo escrito por Jose da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por lucas andretti</p>
+    </footer>
+
+</body>
+</html>

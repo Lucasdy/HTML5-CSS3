@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        * {/* º -configuração globais das CSS */
+            height: 100%;
+        }
+        body {
+            /*background-color: #ffdde23f; Cor Integral */
+            /*background-image: linear-gradient(to right, red, blue); - Para a direita */
+            /*background-image: linear-gradient(to left, red, blue); - Para a esquerda */
+            /*background-image: linear-gradient(to Top, red, blue); - Para baixo */
+            /*background-image: linear-gradient(to bottom, #7B3AAE,#DF173E, #F72001, #F7C001, #F9D505); - Para Cima */
+            /* background-image: linear-gradient(45deg, #7B3AAE, #DF173E, #F72001, #F7C001, #F9D505); 45deg - Referece ao angulo de inclinação do linear. */
+            /*background-image: radial-gradient(circle, #F9D505 10%, #F7C001 20%, #F72001 40%,#DF173E  50%, #7B3AAE 100%); radial = raio & cicle = ciculo. É possível determinar o ponto de partida do degrade a intensidade do degradê com o  % atraz da cor*/
+            background-image: linear-gradient(to top, #524602 1%, #FCF8B8 05%); 
+            /*To top vai aparecer de forma zebrado a menos que exista a seguinte configuração global 'º'. */
+            
+        }
+        h1 {
+            color: #C43302;
+        }
+        h2 {
+            
+        }
+    </style>
+</head>
+<body><!-- Conteudo estudado no dia 5/02/23-->
+    <h1>Textando Gradiente</h1>
+</body>
+</html>

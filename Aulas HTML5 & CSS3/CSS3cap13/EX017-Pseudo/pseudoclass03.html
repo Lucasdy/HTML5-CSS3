@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        a {/* TEORICAMENTE ERA PARA DETERMINAR A Configuração pre-definida. Por algum motivo ele fica alternando entre preto e dourado. quando o certo era ele permanecer dourado apos o clik */
+            color: rgb(240, 17, 17);
+            text-decoration: none; /* Tira o sublinhado do link */
+       
+            font-weight: normal;
+        }
+        a:visited {
+            color: gold;
+        }
+        a:hover {
+            color: rgb(0, 0, 0);
+            text-decoration: underline;
+        }
+        a:active {
+            color: blue;
+        }
+        .especial::before { /*Faz aparecer um objeto antes do link*/
+            content: '↦'; /* Este objeto entre as ''. */
+        }
+        .especial::after {/* faz aparecer um objeto apos o link*/
+            content: '↤';
+        }
+        a::after {/* Cria a Indicação de um link*/
+            background-color: rgb(255, 255, 255);
+            content: 'link';
+            text-decoration: none;
+            font-weight: normal;
+            color:rgb(0, 0, 0)
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul class="visited">
+        <li><a href="https://www.jw.org/pt/" class="especial">Aprenda sobre a Deus </a></li>
+        <li><a href="https://www.youtube.com/@CursoemVideo">Aprenda a programar </a></li>
+        <li><a href="https://www.ukecifras.com.br/">Aprenda Tocar um Instrumento </a></li>
+    </ul>
+
+</body>
+</html>

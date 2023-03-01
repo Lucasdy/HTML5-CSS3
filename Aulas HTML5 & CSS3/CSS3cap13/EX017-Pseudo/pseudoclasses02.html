@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de HOVER</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        div > p {/* Esta 'div > p' significa que a tag(div) tem um filho(p). Refere a algo dentro da tag(div). Neste caso referece ao paragrafo(p). */
+        display: none;
+        /* display significa mostrar
+        none = nada. */
+        /* div > p {
+        display: none; }  Esta expressão inteira pede para a div esconder o filho(p)*/
+        }
+        div:hover>p {
+            /* passe o mouse para liberar o paragrafo*/
+            color: green;
+            display: block;
+            width: 185px;
+            font-size: 16px;
+            font-weight: bolder;
+            background-color: rgb(255, 0, 0);
+            /* esta expressão pede para mostrar o filho(p) escondido na expressão anterior, mas com as configurações desta expressão. */
+        }
+        div:hover {
+            color: rgb(0, 0, 0);
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos De HOVER</h1>
+    <p>passe o mouse sobre o texto a baixo</p>
+    <div> passe o mouse aqui.
+        <p>Paragrafo escondido</p>
+    </div>
+    <p>Fim Do exeplo</p>
+</body>
+</html>

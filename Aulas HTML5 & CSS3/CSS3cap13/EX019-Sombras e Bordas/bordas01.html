@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>borda personalizada</title>
+    <style>
+        @font-face {
+            font-family: 'Love';
+            src: url(font/registac/Regista.ttf) format(truetype) url(font/registac/Regista\ Italic.ttf) format(truetype);
+        }
+        @font-face {
+            font-family: 'Cabin';
+            src: url(font/Cabin/Cabin.ttf) format(truetype) url(font/Cabin/Cabin-Italic.ttf) format(truetype);
+        }
+        body {
+            font-family: 'Cabin';
+            background-color: brown;
+            background-image: url(Sem\ títuloat.png);
+            background-size: cover;
+            margin: 0px;
+        }
+        header {
+            background-color: rgb(240, 240, 255);
+            box-shadow: 0px 1px 1px black;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(240, 240, 240);
+            text-shadow: 0px 0px 4px rgb(250, 250, 250);
+            text-align: center;            
+        }
+        nav>a {
+            background-image: linear-gradient(to bottom, rgb(240, 240, 240), rgb(24, 14, 131));
+            border-radius: 5px;
+            text-decoration: none;
+            padding: 2px;
+            box-shadow: 1px 1px 1px rgb(0, 0, 255);
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+        nav>a:hover {
+            background-color: rgb(255, 200, 200);
+            text-decoration: underline;
+        }
+        
+        main {
+            background-color: rgb(240, 240, 254);
+            box-shadow: 1px 1px 1px black;
+            border: 20px solid black;
+            /* Tem que haver uma borda como a de cima para suportar a imagem de borda, de preferência transparente. Pra o caso de não funcionar em alguns navegadores. */
+            border-image-source: url(Sem\ título.png);
+            /* Encontra uma imagem pre criada */
+            border-image-slice: 20;
+            /* Espessura */
+            border-image-repeat: repeat;
+            /* estilos: repeat ou stretch */
+            padding: 10px;
+            margin: 10px;
+            /*
+            shorthand:
+            ->border-image: url(Sem\ título.png) 27 repeat;
+            */
+        }
+        article {
+            background-color: rgb(200, 200, 255);
+            padding: 5px;
+        }
+        article>aside{
+            background-color: rgb(0, 255, 115);
+            width: 250px;
+        }
+        footer {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-align: center;
+            padding: 2px;
+            margin: 0px;
+        }
+        footer>p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="principal">Meu Site</h1>
+        <nav><!--navegação-->
+            <a href="../EX017-Pseudo/pseudoclasses02.html">Agenda</a>
+            <a href="../EX017-Pseudo/pseudoclasses02.html">Proditos</a>
+            <a href="../EX017-Pseudo/pseudoclasses02.html">Parceiros</a>
+            <a href="../EX017-Pseudo/pseudoclasses02.html">Cadastro</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            
+        </section>
+        <section>
+            <article id="notice">
+                <h2>Não é só saudável</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia vero quia autem reprehenderit eaque deleniti molestias veniam optio officiis minima sunt dolor distinctio, incidunt et ut! Officiis, quis laudantium!</p>
+                <aside>
+                    <p>Artigo escrito por Jose da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por lucas andretti</p>
+    </footer>
+
+</body>
+</html>
