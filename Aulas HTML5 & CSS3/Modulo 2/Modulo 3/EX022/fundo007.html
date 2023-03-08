@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alinhamento vertical</title>
     <style>
-        body {
-            background-color: var(--cor1);
-            color: var(--cor2)
-        }
         #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            /*  Determina o uso de 100% da vielport */
             position: relative;
             height: 500px;
             padding: 10px;
@@ -19,12 +18,12 @@
         #conteudo {
             position: absolute;
             height: 200px;
-            width: 400;
+            width: 400px;
             background-color: yellow;
             margin: auto;
 
             left: 50%;
-            top: 500px
+            top: 50%;
         }
     </style>
 </head>
